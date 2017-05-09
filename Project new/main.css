@@ -1,0 +1,278 @@
+@font-face {
+    font-family: Bebas;
+    src: url(bebas/BebasNeue.otf);
+}
+body {
+    padding-top: 0px;
+}
+
+.header {
+    border-bottom: 1px solid black;
+}
+div.navbar-collapse {
+    width: 100%;
+}
+ul.nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.hidden-phone{
+    background-image: url(images/search.png);   
+    background-repeat: no-repeat; 
+    background-position: right; 
+    outline: none; 
+    padding-left: 20px; 
+}
+.navbar-header {
+    width: 100%;
+}
+.navbar-brand {
+    height: 100%;
+}
+.navbar-nav {
+    float: right;
+    padding: 15px;
+}
+ .price-link {
+    padding-top: 25px;
+    text-decoration: none;
+}
+.price-link:hover {
+    text-decoration: none;
+
+}
+.price {
+    font-size: 18px;
+    color: #afafaf;
+}
+.main-price {
+    font-size: 20px;
+    
+}
+.main-price:hover {
+   color: black;
+
+}
+.color-item {
+    color: #afafaf;
+    font-family: Bebas;
+}
+.form-control {
+    margin-top: 15px;
+}
+.navbar-nav>li>a.a-navi {
+    border-right: 1px solid white;
+    color: white;
+    padding: 0 24px 0 0;
+    font-family: Bebas;
+    font-size: 17px;
+}
+.header-top {
+    margin-bottom: 0px;
+    border: none;
+}
+.header-bottom {
+    background: #4ccfc1;
+    margin-bottom: 0px;
+    border: none;
+}
+.main-button {
+    padding: 10px 20px;
+    background-image: url(images/background.png);
+    border: 3px solid white;
+    border-radius: 10px;
+    color: white;
+    font-family: Bebas;
+    font-size: 21px;
+}
+.main-button:hover {
+    opacity: 0.9;
+    background: #3cc395;
+    transition: 0.7s;
+}
+.second-button {
+    padding: 5px 10px;
+    background: #3cc395;
+    border-radius: 2px;
+    color: white;
+    border: none;
+}
+.second-button:hover {
+    background: #0deca0;
+    transition: 0.7s;
+}
+ .background {
+    background-image: url(images/background.png);
+    width: 100%;
+}
+div.slick-slide {
+    margin: 0;
+}
+.image img {
+    max-width: 100%;
+}
+.image {
+    margin: 10% 0;
+}
+.featured-text {
+    margin: 20px 0;
+    font-family: Bebas;
+    color: white;
+}
+.text {
+    max-width: 100%;
+    margin: 10% 0;
+}
+.container-items {
+    margin-bottom: 30px;
+}
+div.multiple-items {
+    display: flex;
+}
+.col-sm-4 {
+    padding: 10px 0;
+}
+.features-items {
+    border: 1px solid #e4e4e4;
+    border-bottom: 5px solid #3cc395;
+    margin: 0 15px;
+}
+.featured-word {
+    color: white;
+    font-family: 'Roboto';
+}
+h3.featured-word {
+    font-family: Bebas;
+}
+p.featured-word {
+    padding: 15px 0;
+    font-size: 15px;
+}
+a.featured-word:hover {
+text-decoration: none;
+color: black;
+}
+.featured-word-main {
+    color: white;
+    font-family: Bebas;
+    font-size: 42px;
+}
+.center-block {
+    margin-top: 10px;
+    -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+.center-block:hover {
+    opacity: 0.7;
+    transition: 0.7s;
+    height: 123px;
+}
+.bottom-features {
+    margin-bottom: 10px;
+}
+.main-items {
+    margin: 2% 0;
+}
+.product {
+    margin: 4% 0;
+}
+.sale {
+    background: #3cc3b5;
+    padding: 40px 0;
+}
+.footer {
+    background: #2da89b;
+}
+@media (min-width: 1200px) {
+    .navbar-nav>li>a.a-navi {
+    padding: 0 24px 0 0;
+}
+ }
+ @media (max-width: 994px) {
+    .navbar-nav>li>a.a-navi {
+    padding: 0 12px 0 0;
+}
+ }
+ @media (max-width: 768px) {
+    .navbar-nav>li>a.a-navi {
+    padding: 0 12px 0 0;
+}
+ul.nav {
+	display: block;
+}
+img.slider-img {
+    margin: 0 auto;
+}
+ }
+ @media (max-width: 650px) {
+    .hidden-phone {
+    display: none;
+}
+.main-price {
+    font-size: 16px;
+}
+.slider-img {
+    max-width: 100%;
+}
+ }
+ @media (max-width: 480px) {
+    .hidden-phone {
+    display: none;
+}
+.price-link {
+    display: none;
+}
+... }
+.preloader {
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background: black;
+  z-index:2;
+  transition:1s all;
+  opacity:1;
+  visibility:visible;
+}
+
+ .loader {
+    width:75px;
+    height:75px;
+    border:15px solid white;
+    border-radius:50%;
+    border-top-color:#4ccfc1;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    animation: 1.5s spin infinite linear;
+  }
+
+.done {
+  visibility:hidden;
+  opacity:0;  
+}
+
+.loader__text {
+  color: white;
+  font-size: 40px;
+  position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+@keyframes spin {
+  from {
+     transform:translate(-50%,-50%) rotate(0deg) ;
+  }
+  to {
+    transform:translate(-50%,-50%) rotate(360deg) ;
+  }
+}
